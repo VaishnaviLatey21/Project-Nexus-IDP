@@ -15,5 +15,7 @@ module "eks" {
     vpc_id = module.vpc.vpc_id
     private_subnets = module.vpc.private_subnets
 
+    admin_user_arn  = "arn:aws:iam::897729112054:user/vaishnavi"
+
     environment = "dev"
 }

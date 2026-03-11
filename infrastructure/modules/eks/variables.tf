@@ -17,3 +17,8 @@ variable "private_subnets" {
 variable "environment" {
   type = string
 }
+
+variable "admin_user_arn" {
+  description = "IAM user or role with cluster admin access"
+  type        = string
+}
