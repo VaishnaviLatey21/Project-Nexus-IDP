@@ -30,7 +30,7 @@ jobs:
           AWS_REGION: ${{ secrets.AWS_REGION }}
           AWS_ACCOUNT_ID: ${{ secrets.AWS_ACCOUNT_ID }}
 
-      - name: Build and Push Go Services
+      - name: Build and Push Go Service
         run: |
           for dir in microservices/go-gateway-*; do
             service=$(basename $dir)
@@ -42,7 +42,7 @@ jobs:
           AWS_REGION: ${{ secrets.AWS_REGION }}
           AWS_ACCOUNT_ID: ${{ secrets.AWS_ACCOUNT_ID }}
 
-      - name: Build and Push Node Services
+      - name: Build and Push Node Service
         run: |
           for dir in microservices/node-api-*; do
             service=$(basename $dir)
@@ -55,7 +55,7 @@ jobs:
           AWS_REGION: ${{ secrets.AWS_REGION }}
           AWS_ACCOUNT_ID: ${{ secrets.AWS_ACCOUNT_ID }}
 
-      - name: Build and Push Python Services
+      - name: Build and Push Python Service
         run: |
           for dir in microservices/python-worker-*; do
             service=$(basename $dir)
