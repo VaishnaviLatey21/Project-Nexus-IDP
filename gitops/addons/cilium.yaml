@@ -16,8 +16,8 @@ spec:
       values: |
         kubeProxyReplacement: partial
 
-        k8sServiceHost: ${KUBERNETES_SERVICE_HOST}
-        k8sServicePort: ${KUBERNETES_SERVICE_PORT}
+        # k8sServiceHost: ${KUBERNETES_SERVICE_HOST}
+        # k8sServicePort: ${KUBERNETES_SERVICE_PORT}
 
         ipam:
           mode: eni
