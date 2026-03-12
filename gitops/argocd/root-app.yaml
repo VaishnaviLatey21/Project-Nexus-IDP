@@ -8,11 +8,12 @@ spec:
 
   source:
     repoURL: https://github.com/VaishnaviLatey21/Project-Nexus-IDP.git
-    targetRevision: HEAD
+    targetRevision: HEAD    # Use the latest commit of the default branch.
     path: gitops/addons
 
+  # where to deploy resources
   destination:
-    server: https://kubernetes.default.svc
+    server: https://kubernetes.default.svc           
     namespace: argocd
 
   syncPolicy:
