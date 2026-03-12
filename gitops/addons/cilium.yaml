@@ -27,12 +27,8 @@ spec:
 
         hubble:
           enabled: true
-
-        hubble:
           relay:
             enabled: true
-
-        hubble:
           ui:
             enabled: true
 
