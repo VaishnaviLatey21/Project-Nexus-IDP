@@ -14,7 +14,13 @@ spec:
 
     helm:
       values: |
-        kubeProxyReplacement: partial
+        kubeProxyReplacement: strict
+
+        routingMode: native
+
+        ipv4NativeRoutingCIDR: "10.0.0.0/16"
+
+        enableIPv4Masquerade: true
 
         # k8sServiceHost: ${KUBERNETES_SERVICE_HOST}
         # k8sServicePort: ${KUBERNETES_SERVICE_PORT}
