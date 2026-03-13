@@ -26,10 +26,10 @@ spec:
         # k8sServicePort: ${KUBERNETES_SERVICE_PORT}
 
         ipam:
-          mode: eni
+          mode: kubernetes
 
-        eni:
-          enabled: true
+        # eni:
+        #   enabled: true
 
         # hubble:
         #   enabled: true
