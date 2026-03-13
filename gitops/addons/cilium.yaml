@@ -25,12 +25,12 @@ spec:
         eni:
           enabled: true
 
-        hubble:
-          enabled: true
-          relay:
-            enabled: true
-          ui:
-            enabled: true
+        # hubble:
+        #   enabled: true
+        #   relay:
+        #     enabled: true
+        #   ui:
+        #     enabled: true
 
   destination:
     server: https://kubernetes.default.svc
